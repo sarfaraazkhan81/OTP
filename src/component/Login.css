@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,400&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Login {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center > img {
+  margin-bottom: 10px;
+}
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+  background-color: rgb(253, 253, 253);
+  height: 308px;
+}
+.loginBox > h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.loginBox > span {
+  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.loginBox > input {
+  width: 272px;
+  border: 1px solid #cccccc;
+  outline: none;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.loginBox > p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.loginBox > button {
+  background: #eb6e7f;
+  border: none;
+  /* margin-top: 20px; */
+  width: 99%;
+  height: 150px;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 7px;
+}
+.containerStyle {
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+}
+.inputStyle {
+  width: 3em !important;
+}
+.sendOtp {
+  margin-top: 15px;
+}
