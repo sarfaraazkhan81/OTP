@@ -1,0 +1,22 @@
+.loginBox > button {
+  margin-top: 20px;
+  width: 508px;
+  height: 48px;
+  background: #e6e6e6;
+  border-radius: 6px;
+}
+.loginBox > button:hover {
+  background: #eb6e7f;
+}
+.containerStyle {
+  display: flex;
+  justify-content: space-between;
+  width: 50% !important;
+}
+.inputStyle {
+  width: 3em !important;
+  border-radius: 1px solid #e6e6e6;
+}
+.sendOtp {
+  margin-top: 15px;
+}

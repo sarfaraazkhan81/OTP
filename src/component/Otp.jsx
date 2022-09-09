@@ -1,5 +1,5 @@
 import React from "react";
-import "./Login.css";
+import "./Otp.css";
 import MyBackgroundImage from "../assets/images/BG.png";
 import Yabax from "../assets/images/yabax.png";
 import OtpInput from "react-otp-input";
@@ -21,7 +21,7 @@ function Otp(props) {
       <div className="loginBox">
         <h2>Welcome Mr Khan</h2>
         <span>A OTP has been sent 7406512810 </span>
-        {/* <OtpInput
+        <OtpInput
           value={otp}
           onChange={handleChange}
           numInputs={4}
@@ -29,12 +29,12 @@ function Otp(props) {
           placeholder={""}
           containerStyle={"containerStyle"}
           inputStyle={"inputStyle"}
-        /> */}
+        />
         <p>
-          Haven't recieved yet?{" "}
+          Haven't recieved yet?
           <span>
-            Resend in{" "}
-            <Countdown targetDate={oneHour} formatType={"dd_hh_mm_ss"} />,
+            Resend in
+            {/* <Countdown targetDate={oneHour} formatType={"dd_hh_mm_ss"} />, */}
           </span>
         </p>
         <button>Send OTP</button>

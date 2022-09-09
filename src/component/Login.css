@@ -26,7 +26,7 @@
   padding: 50px;
   align-items: center;
   background-color: rgb(253, 253, 253);
-  height: 308px;
+  height: 100%;
 }
 .loginBox > h2 {
   font-family: "Poppins", sans-serif;
@@ -43,12 +43,13 @@
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 20px;
+  color: rgba(51, 51, 51, 1);
 }
 .loginBox > input {
-  width: 272px;
+  width: 252px;
   border: 1px solid #cccccc;
   outline: none;
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 5px;
   border-radius: 5px;
 }
@@ -60,8 +61,8 @@
   background: #eb6e7f;
   border: none;
   /* margin-top: 20px; */
-  width: 99%;
-  height: 150px;
+  width: 350px;
+  height: 4 0px;
   border-radius: 5px;
   font-family: "Poppins";
   font-style: normal;
@@ -69,15 +70,10 @@
   font-size: 16px;
   line-height: 24px;
   padding: 7px;
+  margin-top: 70px;
 }
-.containerStyle {
+.buttonContainer {
   display: flex;
   justify-content: space-between;
-  width: 100% !important;
-}
-.inputStyle {
-  width: 3em !important;
-}
-.sendOtp {
-  margin-top: 15px;
+  margin-top: 50px;
 }

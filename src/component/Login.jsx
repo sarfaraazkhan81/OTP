@@ -1,8 +1,10 @@
 import React from "react";
 import MyBackgroundImage from "../assets/images/BG.png";
+import EditDetails from "./EditDetails";
 import "./Login.css";
 import Mobile from "./Mobile";
 import Otp from "./Otp";
+import PersonalDetails from "./PersonalDetails";
 
 function Login() {
   return (
@@ -17,8 +19,10 @@ function Login() {
         height: "100vh",
       }}
     >
-      <Mobile />
+      {/* <Mobile /> */}
       {/* <Otp /> */}
+      {/* <PersonalDetails /> */}
+      <EditDetailsS />
     </div>
   );
 }
