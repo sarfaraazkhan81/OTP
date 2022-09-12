@@ -1,0 +1,68 @@
+form > span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.02em;
+
+  color: #666666 !important;
+}
+h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.02em;
+
+  color: #191919;
+}
+
+.secondRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.thirdRow {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.EditbuttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#Previus {
+  background: #ffffff;
+  width: 288px;
+  height: 48px;
+  border: 1px solid #eb6e7f;
+  border-radius: 6px;
+  color: #eb6e7f !important;
+  margin-right: 10px;
+  border: none;
+}
+
+#Continue {
+  width: 288px;
+  height: 48px;
+  border: none;
+
+  background: #dfe2e6;
+  border-radius: 6px;
+}

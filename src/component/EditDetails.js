@@ -1,4 +1,5 @@
 import React from "react";
+import "./EditDetails.css";
 
 function EditDetails() {
   return (
@@ -51,9 +52,9 @@ function EditDetails() {
           {/* <input type="submit" /> */}
         </form>
       </div>
-      <div className="buttonContainer">
-        <button id="discard">Discard Change</button>
-        <button>Update</button>
+      <div className="EditbuttonContainer">
+        <button id="Previus">Previus </button>
+        <button id="Continue">Continue</button>
       </div>
     </div>
   );

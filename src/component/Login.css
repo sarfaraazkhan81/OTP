@@ -58,6 +58,7 @@
   margin-bottom: 20px;
 }
 .loginBox > button {
+  outline: none;
   background: #eb6e7f;
   border: none;
   /* margin-top: 20px; */

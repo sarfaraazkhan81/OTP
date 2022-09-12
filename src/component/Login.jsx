@@ -1,6 +1,7 @@
 import React from "react";
 import MyBackgroundImage from "../assets/images/BG.png";
 import EditDetails from "./EditDetails";
+
 import "./Login.css";
 import Mobile from "./Mobile";
 import Otp from "./Otp";
@@ -21,8 +22,8 @@ function Login() {
     >
       {/* <Mobile /> */}
       {/* <Otp /> */}
-      {/* <PersonalDetails /> */}
-      <EditDetailsS />
+      <PersonalDetails />
+      {/* <EditDetails /> */}
     </div>
   );
 }
