@@ -1,3 +1,21 @@
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topContainer > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  color: #eb6e7f;
+  border-radius: 5px;
+  border: solid 1px #eb6e7f;
+}
 form > span {
   font-family: "Poppins";
   font-style: normal;
@@ -62,7 +80,10 @@ h3 {
   width: 288px;
   height: 48px;
   border: none;
-
-  background: #dfe2e6;
+  color: #ffffff;
+  background: #eb6e7f;
   border-radius: 6px;
+}
+.pan {
+  margin-right: 98px !important;
 }

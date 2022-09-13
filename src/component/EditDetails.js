@@ -1,12 +1,19 @@
 import React from "react";
 import "./EditDetails.css";
+import CreateIcon from "@mui/icons-material/Create";
 
 function EditDetails() {
   return (
     <div className="MainDiv">
       <div className="perosnalDetails">
         <form>
-          <span>Personal info</span>
+          <div className="topContainer">
+            <span>Personal info</span>
+            <button>
+              Edit <CreateIcon style={{ height: "15px", marginLeft: "2px" }} />
+            </button>
+          </div>
+
           <div className="firstRow">
             <div>
               <label>First name</label>
@@ -38,7 +45,7 @@ function EditDetails() {
             </div>
           </div>
           <div className="thirdRow">
-            <div>
+            <div className="pan">
               <label>PAN number</label>
               <h3>IGSD11350E</h3>
             </div>

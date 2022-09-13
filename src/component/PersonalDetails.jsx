@@ -4,6 +4,7 @@ import "./PersonalDetails.css";
 import { useForm } from "react-hook-form";
 import DatePicker from "react-date-picker";
 import ReportGmailerrorredIcon from "@mui/icons-material/ReportGmailerrorred";
+import Data from "./Data.json";
 
 function PersonalDetails() {
   const [value, onChange] = useState(new Date());
@@ -13,11 +14,14 @@ function PersonalDetails() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const onSubmit = (data) => {
     console.log(data.firstName);
     if (data.firstName.length <= 0) {
     }
   };
+
+  console.log(Data.firstName, "this is the data");
   return (
     <div className="MainDiv">
       <div className="perosnalDetails">
@@ -72,30 +76,31 @@ function PersonalDetails() {
               </select>
             </div>
           </div>
-          {errors.firstName && (
+          {(errors.firstName && (
             <div className="warning">
               <h2>
                 <ReportGmailerrorredIcon />
                 Pls enter your first name
               </h2>
+              {console.log(errors.firstName, "the firsName")}
             </div>
-          )}
-          {errors.lastName && (
-            <div className="warning">
-              <h2>
-                <ReportGmailerrorredIcon />
-                Pls enter your last name
-              </h2>
-            </div>
-          )}
-          {errors.pannumber && (
-            <div className="warning">
-              <h2>
-                <ReportGmailerrorredIcon />
-                Pls enter your pan card number
-              </h2>
-            </div>
-          )}
+          )) ||
+            (errors.lastName && (
+              <div className="warning">
+                <h2>
+                  <ReportGmailerrorredIcon />
+                  Pls enter your last name
+                </h2>
+              </div>
+            )) ||
+            (errors.pannumber && (
+              <div className="warning">
+                <h2>
+                  <ReportGmailerrorredIcon />
+                  Pls enter your pan card number
+                </h2>
+              </div>
+            ))}
 
           {/* <input {...register("age", { pattern: /\d+/ })} />
         {errors.age && <p>Please enter number for age.</p>} */}
