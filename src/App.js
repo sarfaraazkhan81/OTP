@@ -10,7 +10,8 @@ function App() {
       {/* <Login /> */}
       <Router>
         <Routes>
-          <Route element={<Login />} path="/" />
+          <Route element={<Mobile />} path="/" />
+          <Route element={<Otp />} path="/otp" />
         </Routes>
       </Router>
     </div>

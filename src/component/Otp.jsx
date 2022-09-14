@@ -16,28 +16,40 @@ function Otp(props) {
   var time = new Date();
   console.log(time.getSeconds());
   return (
-    <div className="center">
-      <img src={Yabax} />
-      <div className="loginBox">
-        <h2>Welcome Mr Khan</h2>
-        <span>A OTP has been sent 7406512810 </span>
-        <OtpInput
-          value={otp}
-          onChange={handleChange}
-          numInputs={4}
-          separator={<span> </span>}
-          placeholder={""}
-          containerStyle={"containerStyle"}
-          inputStyle={"inputStyle"}
-        />
-        <p>
-          Haven't recieved yet?
-          <span>
-            Resend in
-            {/* <Countdown targetDate={oneHour} formatType={"dd_hh_mm_ss"} />, */}
-          </span>
-        </p>
-        <button>Send OTP</button>
+    <div
+      className="Login"
+      style={{
+        backgroundImage: `url(${MyBackgroundImage})`,
+        // backgroundImage: `url(${externalImage})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        height: "100vh",
+      }}
+    >
+      <div className="center">
+        <img src={Yabax} />
+        <div className="loginBox">
+          <h2>Welcome Mr Khan</h2>
+          <span>A OTP has been sent 7406512810 </span>
+          <OtpInput
+            value={otp}
+            onChange={handleChange}
+            numInputs={4}
+            separator={<span> </span>}
+            placeholder={""}
+            containerStyle={"containerStyle"}
+            inputStyle={"inputStyle"}
+          />
+          <p>
+            Haven't recieved yet?
+            <span>
+              Resend in
+              {/* <Countdown targetDate={oneHour} formatType={"dd_hh_mm_ss"} />, */}
+            </span>
+          </p>
+          <button>Send OTP</button>
+        </div>
       </div>
     </div>
   );

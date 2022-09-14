@@ -57,7 +57,7 @@
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.loginBox > button {
+.sendOtp {
   outline: none;
   background: #eb6e7f;
   border: none;
@@ -72,6 +72,7 @@
   line-height: 24px;
   padding: 7px;
   margin-top: 70px;
+  color: #ffff;
 }
 .buttonContainer {
   display: flex;

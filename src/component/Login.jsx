@@ -20,10 +20,10 @@ function Login() {
         height: "100vh",
       }}
     >
-      {/* <Mobile /> */}
-      {/* <Otp /> */}
+      <Mobile />
+      <Otp />
       <PersonalDetails />
-      {/* <EditDetails /> */}
+      <EditDetails />
     </div>
   );
 }
