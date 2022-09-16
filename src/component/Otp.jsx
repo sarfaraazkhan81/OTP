@@ -4,17 +4,47 @@ import MyBackgroundImage from "../assets/images/BG.png";
 import Yabax from "../assets/images/yabax.png";
 import OtpInput from "react-otp-input";
 import { useState } from "react";
-import Countdown from "react-countdown-simple";
+import axios from "axios";
+import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 function Otp(props) {
+  const navigate = useNavigate();
   const [otp, setOtp] = useState("");
+  const [resendOtp, setResendOtp] = useState();
+
   const handleChange = (otp) => setOtp(otp);
 
   const oneHour = new Date(
     new Date().setMinutes(new Date().getMinutes() + 1)
   ).toISOString();
 
-  var time = new Date();
-  console.log(time.getSeconds());
+  const resendHandler = async () => {
+    const brrtoken = Cookies.get("tokens");
+    const response = axios
+      .post(
+        "https://yabxdemo-in.yabx.co/apis/v1/otps/resend",
+        {
+          msisdn: "8765432011",
+          partner_code: "yabxdemo_in",
+          purpose: "customer_verification",
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${brrtoken}`,
+            "partner-code": "yabxdemo_in",
+            os: "web_application",
+            "package-id": "f88723dc39b92ee5",
+          },
+        }
+      )
+      .then((response) => setResendOtp(response.data));
+  };
+  const submitOtp = () => {
+    if (otp === resendOtp.code) {
+      navigate("/");
+    }
+  };
+  console.log(resendOtp);
   return (
     <div
       className="Login"
@@ -43,12 +73,12 @@ function Otp(props) {
           />
           <p>
             Haven't recieved yet?
-            <span>
+            <button onClick={resendHandler} className="resend">
               Resend in
               {/* <Countdown targetDate={oneHour} formatType={"dd_hh_mm_ss"} />, */}
-            </span>
+            </button>
           </p>
-          <button>Send OTP</button>
+          <button onClick={submitOtp}>Submit OTP</button>
         </div>
       </div>
     </div>

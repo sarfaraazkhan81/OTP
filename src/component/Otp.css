@@ -17,6 +17,12 @@
   width: 3em !important;
   border-radius: 1px solid #e6e6e6;
 }
+.resend {
+  border: none;
+  background-color: #fff;
+  color: rgb(46, 46, 241);
+  margin-left: 10px;
+}
 .sendOtp {
   margin-top: 15px;
 }
